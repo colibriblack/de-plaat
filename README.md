@@ -16,5 +16,5 @@ Der Container baut einen kleinen Go-Webserver und liefert die statischen Dateien
 
 ## Bildquelle
 
-Das Kopfbild nutzt ein echtes Foto vom Café De Plaat:
-Dietmar Rabich / Wikimedia Commons, CC BY-SA 4.0.
+Die verwendeten De-Plaat-Bilder wurden lokal bereitgestellt.
+Fotos: © Bettina Hähner und Christian Rothe.
