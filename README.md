@@ -13,3 +13,8 @@ Dann im Browser `http://localhost:8080` öffnen.
 ## Container
 
 Der Container baut einen kleinen Go-Webserver und liefert die statischen Dateien auf Port 8080 aus.
+
+## Bildquelle
+
+Das Kopfbild nutzt ein echtes Foto vom Café De Plaat:
+Dietmar Rabich / Wikimedia Commons, CC BY-SA 4.0.

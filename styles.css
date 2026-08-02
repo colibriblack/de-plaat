@@ -335,6 +335,13 @@ footer p {
   margin: 0;
 }
 
+.photo-credit {
+  margin-top: 6px;
+  max-width: 720px;
+  color: rgba(255, 250, 242, 0.62);
+  font-size: 0.78rem;
+}
+
 footer a {
   color: rgba(255, 250, 242, 0.74);
 }
