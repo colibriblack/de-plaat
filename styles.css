@@ -1,0 +1,388 @@
+:root {
+  color-scheme: light;
+  --ink: #251b17;
+  --muted: #6f625b;
+  --paper: #f8f2ea;
+  --clay: #b05d3a;
+  --green: #24443a;
+  --gold: #d7a751;
+  --cream: #fffaf2;
+  --line: rgba(37, 27, 23, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px clamp(18px, 4vw, 56px);
+  color: #fffaf2;
+  background: linear-gradient(to bottom, rgba(16, 12, 10, 0.78), rgba(16, 12, 10, 0));
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 250, 242, 0.72);
+  border-radius: 50%;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+}
+
+.brand small {
+  color: rgba(255, 250, 242, 0.74);
+  font-size: 0.78rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2.4vw, 28px);
+  font-size: 0.94rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255, 250, 242, 0.86);
+}
+
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #15110f;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(18, 14, 12, 0.88) 0%, rgba(18, 14, 12, 0.58) 40%, rgba(18, 14, 12, 0.12) 100%),
+    linear-gradient(0deg, rgba(18, 14, 12, 0.72) 0%, rgba(18, 14, 12, 0) 50%);
+}
+
+.hero-copy {
+  position: relative;
+  max-width: 760px;
+  padding: 148px clamp(20px, 6vw, 72px) 92px;
+  color: #fffaf2;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: clamp(4.2rem, 13vw, 10rem);
+  line-height: 0.86;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+}
+
+.lead {
+  max-width: 520px;
+  color: rgba(255, 250, 242, 0.88);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 250, 242, 0.55);
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.button.primary {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: #251b17;
+}
+
+.button.secondary {
+  color: #fffaf2;
+}
+
+.band,
+.offerings,
+.visit,
+footer {
+  padding-inline: clamp(20px, 6vw, 72px);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(24px, 6vw, 84px);
+  padding-top: clamp(64px, 10vw, 118px);
+  padding-bottom: clamp(64px, 10vw, 118px);
+}
+
+.section-label {
+  color: var(--clay);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.intro-text p {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 1.8vw, 1.35rem);
+}
+
+.offerings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.offerings article {
+  min-height: 290px;
+  padding: clamp(28px, 5vw, 56px);
+  border-right: 1px solid var(--line);
+}
+
+.offerings article:last-child {
+  border-right: 0;
+}
+
+.icon {
+  display: inline-flex;
+  margin-bottom: 48px;
+  color: var(--clay);
+  font-weight: 900;
+}
+
+.offerings p,
+.events p,
+.visit p,
+dd {
+  color: var(--muted);
+}
+
+.dark {
+  background: var(--green);
+  color: var(--cream);
+}
+
+.events {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(68px, 9vw, 112px);
+  padding-bottom: clamp(68px, 9vw, 112px);
+}
+
+.events p {
+  color: rgba(255, 250, 242, 0.68);
+}
+
+.event-list {
+  display: grid;
+  gap: 18px;
+}
+
+.event-list article {
+  padding: 28px 0;
+  border-top: 1px solid rgba(255, 250, 242, 0.22);
+}
+
+time {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.visit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(290px, 420px);
+  gap: clamp(36px, 7vw, 96px);
+  padding-top: clamp(70px, 10vw, 124px);
+  padding-bottom: clamp(70px, 10vw, 124px);
+  background: var(--cream);
+}
+
+.visit-copy {
+  max-width: 700px;
+}
+
+.visit-panel {
+  align-self: start;
+  border-top: 4px solid var(--clay);
+  background: #f3e7d8;
+}
+
+dl {
+  margin: 0;
+}
+
+.visit-panel div {
+  display: grid;
+  gap: 8px;
+  padding: 24px;
+  border-bottom: 1px solid rgba(37, 27, 23, 0.15);
+}
+
+.visit-panel div:last-child {
+  border-bottom: 0;
+}
+
+dt {
+  font-weight: 900;
+}
+
+dd {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #fffaf2;
+  background: #171210;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: rgba(255, 250, 242, 0.74);
+}
+
+@media (max-width: 820px) {
+  .site-header {
+    align-items: flex-start;
+    padding-bottom: 34px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: 86vh;
+  }
+
+  .hero-copy {
+    padding-top: 120px;
+    padding-bottom: 54px;
+  }
+
+  .intro,
+  .events,
+  .visit {
+    grid-template-columns: 1fr;
+  }
+
+  .offerings {
+    grid-template-columns: 1fr;
+  }
+
+  .offerings article {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .offerings article:last-child {
+    border-bottom: 0;
+  }
+
+  .icon {
+    margin-bottom: 28px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
