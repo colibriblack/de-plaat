@@ -1,6 +1,6 @@
 # De Plaat Website
 
-Statische erste Version der Website fuer das Vinyl Cafe De Plaat in Esens.
+Statische erste Version der Website für das Vinyl Café De Plaat in Esens.
 
 ## Lokal ansehen
 
@@ -8,7 +8,7 @@ Statische erste Version der Website fuer das Vinyl Cafe De Plaat in Esens.
 python3 -m http.server 8080
 ```
 
-Dann im Browser `http://localhost:8080` oeffnen.
+Dann im Browser `http://localhost:8080` öffnen.
 
 ## Container
 
