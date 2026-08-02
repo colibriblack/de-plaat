@@ -33,27 +33,3 @@ jobs:
           tags: |
             ${{ steps.image.outputs.image }}:sha-${{ github.sha }}
             ${{ steps.image.outputs.image }}:latest
-      - name: Check out deployments repo
-        uses: actions/checkout@v4
-        with:
-          repository: colibriblack/gh0stcloud-deployments
-          ref: main
-          token: ${{ secrets.DEPLOYMENTS_REPO_TOKEN }}
-          path: .deployments-repo
-      - name: Point deployment at the new image
-        working-directory: .deployments-repo
-        env:
-          IMAGE: ${{ steps.image.outputs.image }}
-          VALUES_FILE: kustomize/overlays/ghc-prd/7baab590/de-plaat/helm-values.yaml
-        run: |
-          if [ ! -f "$VALUES_FILE" ]; then
-            echo "deployment overlay not present yet; skipping release step"
-            exit 0
-          fi
-          yq -i '.spec.values.deployment.image.repository = strenv(IMAGE) | .spec.values.deployment.image.tag = "sha-" + strenv(GITHUB_SHA)' "$VALUES_FILE"
-          git config user.name "gh0stcloud-deploy"
-          git config user.email "deploy-bot@users.noreply.github.com"
-          git add "$VALUES_FILE"
-          git diff --cached --quiet && exit 0
-          git commit -m "deploy: release image sha-$GITHUB_SHA"
-          git push
