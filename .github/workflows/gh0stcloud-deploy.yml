@@ -32,4 +32,3 @@ jobs:
           push: true
           tags: |
             ${{ steps.image.outputs.image }}:sha-${{ github.sha }}
-            ${{ steps.image.outputs.image }}:latest
