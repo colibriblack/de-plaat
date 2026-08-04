@@ -588,6 +588,7 @@ footer a {
 
   nav a {
     flex: 0 0 auto;
+    color: #ffffff;
     min-height: 36px;
     white-space: nowrap;
   }
@@ -622,7 +623,18 @@ footer a {
   }
 
   .lead {
+    color: #ffffff;
     max-width: 340px;
+  }
+
+  .hero-copy,
+  .hero .eyebrow,
+  .hero .button.secondary {
+    color: #ffffff;
+  }
+
+  .hero .button.secondary {
+    border-color: rgba(255, 255, 255, 0.78);
   }
 
   .intro,
