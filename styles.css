@@ -385,6 +385,11 @@ footer {
   background: var(--light-gray);
 }
 
+.press-links {
+  display: grid;
+  gap: 8px;
+}
+
 .press-card span,
 .recommendation-list span {
   display: inline-flex;
