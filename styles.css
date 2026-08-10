@@ -974,6 +974,14 @@ footer a {
     overflow-wrap: anywhere;
   }
 
+  .visit-panel a,
+  .imprint a,
+  .privacy a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+  }
+
   .featured-event {
     grid-template-columns: 1fr;
   }
