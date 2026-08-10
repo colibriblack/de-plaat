@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "label": "Vinyl",
+      "title": "Handverlesene Platten",
+      "text": "Neue Fundstücke, Klassiker und persönliche Empfehlungen aus dem Laden."
+    },
+    {
+      "label": "Café & Bar",
+      "title": "Kaffee, Kuchen, Gespräche",
+      "text": "Ein Platz zum Bleiben zwischen Plattenkisten, Kunst und Alltag."
+    },
+    {
+      "label": "Kultur",
+      "title": "Kleine Formate",
+      "text": "Konzerte, Hörabende und Begegnungen im intimen Rahmen von De Plaat."
+    }
+  ]
+}

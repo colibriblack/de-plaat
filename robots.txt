@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://de-plaat.7baab590.prd.gh0stcloud.de/sitemap.xml

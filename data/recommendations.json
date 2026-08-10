@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "label": "Fundstück",
+      "title": "Neu in der Kiste",
+      "text": "Besondere Platten aus dem Laden, die gerade Aufmerksamkeit verdient haben.",
+      "linkLabel": "Platte anfragen",
+      "linkHref": "https://wa.me/4949716999222?text=Moin%20De%20Plaat%2C%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20Fundst%C3%BCck%3A",
+      "external": true
+    },
+    {
+      "label": "Hörtipp",
+      "title": "Für den nächsten Kaffee",
+      "text": "Musik, die bei De Plaat gut zu einer ruhigen halben Stunde passt.",
+      "linkLabel": "Plaat-Post abonnieren",
+      "linkHref": "#newsletter"
+    },
+    {
+      "label": "Vorbestellung",
+      "title": "Gesucht oder gewünscht?",
+      "text": "Plattenwünsche können persönlich geprüft und nach Möglichkeit zurückgelegt werden.",
+      "linkLabel": "Per E-Mail vorbestellen",
+      "linkHref": "mailto:moin@deplaat.de?subject=Plattenwunsch%20bei%20De%20Plaat"
+    }
+  ]
+}

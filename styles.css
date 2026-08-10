@@ -297,6 +297,10 @@ h3 {
 
 .band,
 .offerings,
+.current,
+.press,
+.recommendations,
+.connect,
 .visit,
 footer {
   padding-inline: clamp(20px, 6vw, 72px);
@@ -321,6 +325,74 @@ footer {
   max-width: 780px;
   color: var(--muted);
   font-size: clamp(1.08rem, 1.8vw, 1.35rem);
+}
+
+.current {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(320px, 1.2fr);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(64px, 8vw, 96px);
+  padding-bottom: clamp(64px, 8vw, 96px);
+  background: var(--light-gray);
+  border-top: 8px solid var(--clay);
+}
+
+.current-heading {
+  max-width: 620px;
+}
+
+.current-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.current-grid article {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 34px);
+  background: #ffffff;
+}
+
+.current-grid span {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.press {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 420px);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(64px, 8vw, 96px);
+  padding-bottom: clamp(64px, 8vw, 96px);
+  background: #ffffff;
+  border-top: 8px solid var(--clay);
+}
+
+.press-copy {
+  max-width: 760px;
+}
+
+.press-card {
+  align-self: start;
+  padding: clamp(24px, 4vw, 38px);
+  border-top: 4px solid var(--clay);
+  background: var(--light-gray);
+}
+
+.press-card span,
+.recommendation-list span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .offerings {
@@ -375,10 +447,62 @@ footer {
 }
 
 .offerings p,
+.current p,
 .events p,
 .visit p,
+.requests p,
 dd {
   color: var(--muted);
+}
+
+.offering-points {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  color: var(--muted);
+  list-style: none;
+}
+
+.offering-points li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.offering-points li::before {
+  position: absolute;
+  left: 0;
+  color: var(--clay);
+  content: "/";
+  font-weight: 900;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(300px, 1.2fr);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(68px, 9vw, 112px);
+  padding-bottom: clamp(68px, 9vw, 112px);
+  background: #ffffff;
+}
+
+.recommendation-heading {
+  max-width: 680px;
+}
+
+.recommendation-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  align-self: start;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.recommendation-list article {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 34px);
+  background: var(--light-gray);
 }
 
 .dark {
@@ -396,6 +520,11 @@ dd {
 
 .events p {
   color: var(--muted);
+}
+
+.section-intro {
+  max-width: 520px;
+  font-size: 1.08rem;
 }
 
 .event-list {
@@ -493,6 +622,133 @@ dl {
 
 .visit-panel div:last-child {
   border-bottom: 0;
+}
+
+.connect {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(300px, 1.16fr);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(68px, 9vw, 112px);
+  padding-bottom: clamp(68px, 9vw, 112px);
+  background: var(--light-gray);
+  border-top: 8px solid var(--clay);
+}
+
+.connect-copy {
+  max-width: 680px;
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  align-self: start;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.connect-grid article {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 34px);
+  background: #ffffff;
+}
+
+.requests {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(300px, 1.15fr);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(68px, 9vw, 112px);
+  padding-bottom: clamp(68px, 9vw, 112px);
+  background: var(--light-gray);
+  border-top: 8px solid var(--clay);
+}
+
+.request-copy {
+  max-width: 660px;
+}
+
+.request-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.request-actions article {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 34px);
+  background: #ffffff;
+}
+
+.request-actions p {
+  margin-bottom: 18px;
+}
+
+.event-page {
+  background: #ffffff;
+}
+
+.event-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 380px);
+  gap: clamp(32px, 7vw, 96px);
+  align-items: center;
+  min-height: 100vh;
+  padding-top: clamp(130px, 12vw, 180px);
+  padding-bottom: clamp(64px, 8vw, 96px);
+  color: #ffffff;
+  background: #171210;
+}
+
+.event-hero h1 {
+  max-width: 760px;
+  margin-bottom: 18px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5.4rem);
+  font-weight: 900;
+  line-height: 0.95;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.event-hero .lead {
+  max-width: 620px;
+}
+
+.event-hero-poster {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background: var(--light-gray);
+}
+
+.event-hero-poster img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1190 / 1684;
+  object-fit: cover;
+}
+
+.event-details {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(300px, 1fr);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(64px, 8vw, 96px);
+  padding-bottom: clamp(64px, 8vw, 96px);
+  background: #ffffff;
+}
+
+.event-details dl {
+  border-top: 1px solid var(--line);
+}
+
+.event-details dl > div {
+  display: grid;
+  gap: 8px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
 }
 
 .imprint,
@@ -638,20 +894,52 @@ footer a {
   }
 
   .intro,
+  .current,
+  .press,
+  .recommendations,
   .events,
+  .connect,
   .visit,
+  .requests,
+  .event-hero,
+  .event-details,
   .imprint,
   .privacy {
     grid-template-columns: 1fr;
   }
 
   .intro,
+  .current,
+  .press,
+  .recommendations,
   .events,
+  .connect,
   .visit,
+  .requests,
+  .event-details,
   .imprint,
   .privacy {
     padding-top: 54px;
     padding-bottom: 54px;
+  }
+
+  .request-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .current-grid,
+  .recommendation-list,
+  .connect-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-hero {
+    min-height: auto;
+    padding-top: 118px;
+  }
+
+  .event-hero-poster {
+    max-width: 260px;
   }
 
   .imprint,
