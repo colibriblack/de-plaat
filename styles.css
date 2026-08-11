@@ -364,6 +364,59 @@ footer {
   text-transform: uppercase;
 }
 
+.guestbook {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(320px, 1.18fr);
+  gap: clamp(32px, 7vw, 96px);
+  padding-top: clamp(64px, 8vw, 96px);
+  padding-bottom: clamp(64px, 8vw, 96px);
+  background: #ffffff;
+  border-top: 8px solid var(--clay);
+}
+
+.guestbook-copy {
+  max-width: 680px;
+}
+
+.guestbook-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.guestbook-list article {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 34px);
+  background: var(--light-gray);
+}
+
+.guestbook-list span {
+  display: inline-flex;
+  margin-bottom: 20px;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.guestbook-list blockquote {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.guestbook-list blockquote::before {
+  content: "„";
+}
+
+.guestbook-list blockquote::after {
+  content: "“";
+}
+
 .press {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 420px);
@@ -900,6 +953,7 @@ footer a {
 
   .intro,
   .current,
+  .guestbook,
   .press,
   .recommendations,
   .events,
@@ -915,6 +969,7 @@ footer a {
 
   .intro,
   .current,
+  .guestbook,
   .press,
   .recommendations,
   .events,
@@ -933,6 +988,7 @@ footer a {
   }
 
   .current-grid,
+  .guestbook-list,
   .recommendation-list,
   .connect-grid {
     grid-template-columns: 1fr;

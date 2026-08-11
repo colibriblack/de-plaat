@@ -79,6 +79,33 @@
   }
 })();
 
+(async () => {
+  const list = document.querySelector("[data-guestbook-list]");
+
+  if (!list) {
+    return;
+  }
+
+  try {
+    const response = await fetch("/data/guestbook.json", { cache: "no-store" });
+
+    if (!response.ok) {
+      return;
+    }
+
+    const data = await response.json();
+    const entries = Array.isArray(data.entries) ? data.entries : [];
+
+    if (!entries.length) {
+      return;
+    }
+
+    list.replaceChildren(...entries.map(renderGuestbookEntry));
+  } catch (_error) {
+    // The static HTML remains as a fallback if the guestbook file cannot be loaded.
+  }
+})();
+
 function renderCurrentItem(item) {
   const article = document.createElement("article");
 
@@ -123,6 +150,19 @@ function renderRecommendation(item) {
     article.append(link);
   }
 
+  return article;
+}
+
+function renderGuestbookEntry(entry) {
+  const article = document.createElement("article");
+
+  const label = document.createElement("span");
+  label.textContent = entry.label || "Gästebuch";
+
+  const quote = document.createElement("blockquote");
+  quote.textContent = entry.text || "";
+
+  article.append(label, quote);
   return article;
 }
 
