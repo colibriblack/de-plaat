@@ -42,3 +42,8 @@ Die Seite enthält einfache Suchmaschinen-Daten im HTML, eine `robots.txt` und e
 
 Die verwendeten De-Plaat-Bilder wurden lokal bereitgestellt.
 Fotos: © Bettina Hähner und Christian Rothe.
+
+## Interne Notizen
+
+- Mitgliedschaften: Eine mögliche VUT-Mitgliedschaft später erst aufnehmen, wenn sie wirklich besteht. Dann dezent als Haltung zu unabhängiger Musikkultur erwähnen, nicht als große Auszeichnung.
+- IHK nicht prominent auf der Website listen. Für die GmbH ist sie formal Pflicht und gehört höchstens in rechtliche/administrative Unterlagen, nicht in den sichtbaren Markenauftritt.
