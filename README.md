@@ -32,7 +32,7 @@ Der Kaurna-Cronin-Termin hat eine eigene Seite unter `termine/kaurna-cronin-2026
 
 ## Etappe 3 und 4
 
-Die Seite enthält jetzt Grundlagen für bessere Auffindbarkeit und Kundenbindung: strukturierte Daten für Google, eine eigene Terminseite, Teilen per WhatsApp, Instagram-Link, Plaat-Post per E-Mail und einfache Anfragewege für Platten, Reservierungen, Vorbestellungen, Gutscheine und Tickets.
+Die Seite enthält jetzt Grundlagen für bessere Auffindbarkeit und Kundenbindung: strukturierte Daten für Google, eine eigene Terminseite, Teilen per WhatsApp, Instagram-Link, De Plaat Post per E-Mail und einfache Anfragewege für Platten, Reservierungen, Vorbestellungen, Gutscheine und Tickets.
 
 ## Google-Grundlage
 
