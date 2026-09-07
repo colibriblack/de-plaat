@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "label": "Fotografie",
+      "title": "Goldene Stunde in Ostfriesland",
+      "text": "Landschaft, Nebel und tiefes Licht: ein ruhiger Küstenmoment zwischen Weg, Feld und weitem Himmel.",
+      "image": "/assets/de-plaat-foto-morgenlicht.jpg",
+      "alt": "Fotografie eines Sonnenaufgangs über einem Weg und Feld",
+      "status": "Limitierte Auflage: 20 signierte Prints"
+    },
+    {
+      "label": "Fotografie",
+      "title": "Warten auf den Sturm, Hafen Dornumersiel",
+      "text": "Dornumersiel am Hafen: Nordsee, Wolken und nasse Promenade, kräftig, grafisch und still zugleich.",
+      "image": "/assets/de-plaat-foto-hafenwetter.jpg",
+      "alt": "Fotografie von Liegebänken an der Nordsee bei dramatischem Wetter",
+      "status": "Limitierte Auflage: 20 signierte Prints"
+    }
+  ]
+}
