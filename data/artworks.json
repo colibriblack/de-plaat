@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "label": "Aquarell",
+      "title": "De Plaat in der Marktstraße",
+      "text": "Das Haus als leichte, persönliche Ansicht: gelbe Fassade, Schild, Baum und dieser kleine Moment vor der Tür.",
+      "image": "/assets/de-plaat-aquarell-haus-naher.jpg",
+      "alt": "Aquarell vom De Plaat Haus in der Marktstraße in Esens",
+      "status": "auf Anfrage"
+    },
+    {
+      "label": "Aquarell",
+      "title": "Vinyl, Wein und roter Klang",
+      "text": "Plattenspieler, Flaschen und eine rote Platte: ein leiser Stillleben-Blick auf das, was De Plaat zusammenbringt.",
+      "image": "/assets/de-plaat-aquarell-vinyl-wein.jpg",
+      "alt": "Aquarell mit Flaschen und Plattenspieler mit roter Schallplatte",
+      "status": "auf Anfrage"
+    },
+    {
+      "label": "Aquarell",
+      "title": "Flaschen, Bücher, kleine Dinge",
+      "text": "Eine ruhige Skizze aus dem Ladenleben: Fundstücke, Bücher und Gegenstände, die erst beim zweiten Blick erzählen.",
+      "image": "/assets/de-plaat-aquarell-flaschen-buecher-hell.jpg",
+      "alt": "Aquarell mit Flaschen und Büchern",
+      "status": "auf Anfrage"
+    }
+  ]
+}

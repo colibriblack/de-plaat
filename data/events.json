@@ -2,9 +2,24 @@
   "events": [
     {
       "featured": true,
+      "dateLabel": "Termin in Planung",
+      "title": "Wein & Vinyl",
+      "description": "Ein Abend mit aufgelegten Platten, Wein, kleinen Tellern und Aquarell als Eintrittskarte.",
+      "locationLabel": "De Plaat, Marktstraße 8, 26427 Esens",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=De%20Plaat%2C%20Marktstra%C3%9Fe%208%2C%2026427%20Esens",
+      "posterImage": "/assets/de-plaat-aquarell-vinyl-wein.jpg",
+      "posterAlt": "Aquarell mit Weinflaschen, Plattenspieler und roter Schallplatte",
+      "posterVariant": "art-ticket",
+      "posterLabel": "Wein & Vinyl Terminseite öffnen",
+      "protectedMedia": true,
+      "url": "/termine/wein-vinyl.html",
+      "urlLabel": "Karte ansehen"
+    },
+    {
+      "featured": true,
       "date": "2026-08-14",
       "endDate": "2026-08-14",
-      "dateLabel": "14. August 2026",
+      "dateLabel": "Rückblick: 14. August 2026",
       "title": "Kaurna Cronin & the band mates",
       "description": "\"The Jester in a Mess\" European Tour 2026 war live bei De Plaat in Esens.",
       "locationLabel": "De Plaat, Marktstraße 8, 26427 Esens",

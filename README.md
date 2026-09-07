@@ -26,9 +26,15 @@ Der Bereich „Gerade bei De Plaat“ liegt in `data/current.json`. Dort können
 
 Der Bereich „Persönlich empfohlen“ liegt in `data/recommendations.json`. Dort können Fundstücke, Hörtipps oder Vorbestellungen gepflegt werden. Das ist die einfache Vorstufe für einen späteren kleinen, kuratierten Shop.
 
+## Aquarelle und Fotografien pflegen
+
+Die Bereiche „Aquarelle“ und „Fotografien“ werden aus `data/artworks.json` und `data/photographs.json` befüllt. Neue Bilder gehören in den Ordner `assets`; danach können Titel, Beschreibung, Bildpfad, Alternativtext und Status in der jeweiligen JSON-Datei ergänzt werden.
+
 ## Eigene Terminseiten
 
 Der Kaurna-Cronin-Termin hat eine eigene Seite unter `termine/kaurna-cronin-2026.html`. Für größere Veranstaltungen kann später eine weitere HTML-Seite in diesem Ordner angelegt und zusätzlich in `data/events.json` verlinkt werden.
+
+Der Wein-&-Vinyl-Abend hat eine eigene Seite unter `termine/wein-vinyl.html`. Dort steht die Idee „Aquarell als Eintrittskarte“ und eine kleine Speisen- und Getränkekarte als Entwurf. Preise, Datum und konkrete Weinauswahl können dort ergänzt werden, sobald sie feststehen.
 
 ## Etappe 3 und 4
 
