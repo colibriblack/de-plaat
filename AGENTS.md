@@ -2,6 +2,13 @@
 
 These instructions are for Codex/ChatGPT agents working on the De Plaat website.
 
+## Customer Context
+
+- Falk Haehner set up this workspace for his mother Bettina Haehner.
+- Bettina should be able to develop the De Plaat website without IT knowledge by working with Codex, gh0stcloud, and gh0stcli.
+- Agents own the technical work: evaluation, planning, implementation, quality checks, commits, and gh0stcloud validation.
+- Ask Bettina only simple business questions: content, dates, offers, images, wording, opening hours, legal approvals, design taste, and business decisions.
+
 ## Local Paths
 
 - Current local app repo: `/Users/bettinahaehner/Development/github.com/colibriblack/de-plaat`.
