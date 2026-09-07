@@ -3,17 +3,15 @@
     {
       "featured": true,
       "date": "2026-08-14",
+      "endDate": "2026-08-14",
       "dateLabel": "14. August 2026",
       "title": "Kaurna Cronin & the band mates",
-      "description": "\"The Jester in a Mess\" European Tour 2026 live bei De Plaat in Esens.",
+      "description": "\"The Jester in a Mess\" European Tour 2026 war live bei De Plaat in Esens.",
       "locationLabel": "De Plaat, Marktstraße 8, 26427 Esens",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=De%20Plaat%2C%20Marktstra%C3%9Fe%208%2C%2026427%20Esens",
-      "posterImage": "/assets/kaurna-cronin-esens-2026-poster.png",
-      "posterAlt": "Plakat Kaurna Cronin and the band mates am 14. August in Esens bei De Plaat",
-      "posterPdf": "/assets/kaurna-cronin-esens-2026-poster.pdf",
-      "linkLabel": "Plakat ansehen",
       "url": "/termine/kaurna-cronin-2026.html",
-      "urlLabel": "Terminseite öffnen"
+      "urlLabel": "Terminseite öffnen",
+      "archiveUrlLabel": "Rückblick ansehen"
     },
     {
       "dateLabel": "Regelmäßig",
