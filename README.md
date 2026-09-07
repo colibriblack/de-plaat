@@ -16,7 +16,7 @@ Der Container baut einen kleinen Go-Webserver und liefert die statischen Dateien
 
 ## Termine pflegen
 
-Die sichtbaren Termine liegen zusätzlich in `data/events.json`. Für einen neuen Termin kann dort ein weiterer Eintrag ergänzt werden. Die Seite hat weiterhin eine statische Fallback-Anzeige, falls die Datei einmal nicht geladen werden kann.
+Die Termine liegen in `data/events.json`. Für einen neuen Termin kann dort ein weiterer Eintrag ergänzt werden. Die Startseite zeigt automatisch nur aktuelle und kommende Termine. Vergangene Termine erscheinen im Archiv unter `/termine/archiv.html`, sobald ihr `endDate` vor dem heutigen Datum liegt. Wenn kein `endDate` gesetzt ist, wird `date` verwendet. Einträge ohne Datum bleiben auf der Startseite sichtbar, zum Beispiel regelmäßige oder noch nicht terminierte Formate.
 
 ## Aktuelle Inhalte pflegen
 
