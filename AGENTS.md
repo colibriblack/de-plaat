@@ -2,6 +2,12 @@
 
 These instructions are for Codex/ChatGPT agents working on the De Plaat website.
 
+## Local Paths
+
+- Current local app repo: `/Users/bettinahaehner/Development/github.com/colibriblack/de-plaat`.
+- Current local deployment repo: `/Users/bettinahaehner/Development/github.com/colibriblack/gh0stcloud-deployments`.
+- The old `Documents/Development/github.com/colibriblack/...` location is obsolete. If a session starts there, switch to the current paths above before reading or writing files.
+
 ## Working Style
 
 - Treat the user as a beginner/non-technical customer who wants guided help.
