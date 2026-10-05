@@ -1,7 +1,7 @@
 name: gh0stcloud deploy
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "terms-only-online-2026-10-05"]
     paths-ignore:
       - "kustomize/**"
 permissions:
