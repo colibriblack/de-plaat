@@ -2,7 +2,9 @@
   "events": [
     {
       "featured": true,
-      "dateLabel": "Termin in Planung",
+      "date": "2026-10-16",
+      "endDate": "2026-10-16",
+      "dateLabel": "16. Oktober 2026, ab 17.00 Uhr",
       "title": "Wein & Vinyl",
       "description": "Ein Abend mit aufgelegten Platten, Wein, kleinen Tellern und Aquarell als Eintrittskarte.",
       "locationLabel": "De Plaat, Marktstraße 8, 26427 Esens",
@@ -13,7 +15,21 @@
       "posterLabel": "Wein & Vinyl Terminseite öffnen",
       "protectedMedia": true,
       "url": "/termine/wein-vinyl.html",
-      "urlLabel": "Karte ansehen"
+      "urlLabel": "Karte ansehen",
+      "archiveUrlLabel": "Rückblick ansehen"
+    },
+    {
+      "featured": true,
+      "date": "2026-10-30",
+      "endDate": "2026-10-30",
+      "dateLabel": "30. Oktober 2026, ab 17.00 Uhr",
+      "title": "Halloween im De Plaat",
+      "description": "Betreutes Gruseln im Laden: ein Halloween-Abend bei De Plaat.",
+      "locationLabel": "De Plaat, Marktstraße 8, 26427 Esens",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=De%20Plaat%2C%20Marktstra%C3%9Fe%208%2C%2026427%20Esens",
+      "url": "/termine/halloween-2026.html",
+      "urlLabel": "Termin ansehen",
+      "archiveUrlLabel": "Rückblick ansehen"
     },
     {
       "featured": true,

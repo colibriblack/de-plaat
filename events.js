@@ -3,6 +3,7 @@
 
   if (typeof document !== "undefined") {
     hydrateEvents();
+    hydrateEventPreview();
     hydrateArchive();
     hydrateCurrentItems();
     hydrateRecommendations();
@@ -26,6 +27,27 @@
       }
 
       list.replaceChildren(...upcomingEvents.map(renderEvent));
+    } catch (_error) {
+      // The static HTML remains as a fallback if the event file cannot be loaded.
+    }
+  }
+
+  async function hydrateEventPreview() {
+    const list = document.querySelector("[data-events-preview-list]");
+
+    if (!list) {
+      return;
+    }
+
+    try {
+      const previewEvents = getArchivedEvents(await loadEvents()).slice(0, 2);
+
+      if (!previewEvents.length) {
+        list.replaceChildren(renderEventPreviewEmptyState());
+        return;
+      }
+
+      list.replaceChildren(...previewEvents.map(renderEventPreview));
     } catch (_error) {
       // The static HTML remains as a fallback if the event file cannot be loaded.
     }
@@ -437,6 +459,21 @@ function renderEvent(event) {
   return article;
 }
 
+function renderEventPreview(event) {
+  const article = document.createElement("article");
+  appendEventText(article, event || {}, "h4");
+
+  if (event && event.url) {
+    const link = document.createElement("a");
+    link.className = "text-link";
+    link.href = event.url;
+    link.textContent = event.archiveUrlLabel || "Rückblick ansehen";
+    article.append(link);
+  }
+
+  return article;
+}
+
 function renderArchiveEvent(event) {
   const article = document.createElement("article");
   article.className = event && event.featured && event.posterImage ? "featured-event archive-event" : "archive-event";
@@ -492,7 +529,7 @@ function renderArchiveEvent(event) {
   return article;
 }
 
-function appendEventText(container, event) {
+function appendEventText(container, event, headingTag = "h3") {
   const time = document.createElement("time");
   const visibleDate = event.date || event.startDate;
 
@@ -502,7 +539,7 @@ function appendEventText(container, event) {
 
   time.textContent = event.dateLabel || visibleDate || "Nach Ankündigung";
 
-  const title = document.createElement("h3");
+  const title = document.createElement(headingTag);
   title.textContent = event.title || "Termin";
 
   const description = document.createElement("p");
@@ -520,6 +557,20 @@ function renderUpcomingEmptyState() {
 
   const text = document.createElement("p");
   text.textContent = "Vergangene Abende bleiben im Archiv auffindbar.";
+
+  article.append(title, text);
+  return article;
+}
+
+function renderEventPreviewEmptyState() {
+  const article = document.createElement("article");
+  article.className = "empty-state";
+
+  const title = document.createElement("h4");
+  title.textContent = "Noch kein Rückblick vorhanden.";
+
+  const text = document.createElement("p");
+  text.textContent = "Sobald ein Abend vorbei ist, erscheint er hier automatisch.";
 
   article.append(title, text);
   return article;
@@ -603,6 +654,8 @@ if (typeof document !== "undefined") {
       isPastEvent,
       renderArchiveEmptyState,
       renderArchiveEvent,
+      renderEventPreview,
+      renderEventPreviewEmptyState,
       renderUpcomingEmptyState
     };
   }

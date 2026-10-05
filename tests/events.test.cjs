@@ -4,7 +4,9 @@ const {
   getUpcomingEvents,
   isPastEvent,
   renderArchiveEmptyState,
-  renderArchiveEvent
+  renderArchiveEvent,
+  renderEventPreview,
+  renderEventPreviewEmptyState
 } = require("../events.js");
 
 class TestElement {
@@ -97,6 +99,16 @@ assert.match(archiveText, /De Plaat/);
 assert.equal(archiveImages.length, 0);
 assert.equal(archiveLinks.some((link) => link.href === "/termine/kaurna-cronin-2026.html"), true);
 assert.doesNotMatch(archiveText, /Reservierung|reservieren|kaufen|WhatsApp/i);
+
+const previewItem = renderEventPreview(kaurna);
+const previewText = collectText(previewItem);
+const previewHeadings = collectElements(previewItem, "h4");
+assert.match(previewText, /Kaurna Cronin/);
+assert.equal(previewHeadings.length, 1);
+assert.equal(collectElements(previewItem, "a").some((link) => link.href === "/termine/kaurna-cronin-2026.html"), true);
+
+const previewEmptyState = renderEventPreviewEmptyState();
+assert.match(collectText(previewEmptyState), /Noch kein Rückblick vorhanden/);
 
 const emptyState = renderArchiveEmptyState();
 assert.match(collectText(emptyState), /Noch keine vergangenen Termine/);
