@@ -33,6 +33,19 @@
     },
     {
       "featured": true,
+      "date": "2026-11-27",
+      "endDate": "2026-11-27",
+      "dateLabel": "Freitag, 27. November 2026",
+      "title": "Record Store Day Black Friday",
+      "description": "Ein Tag für Vinyl und Musik bei De Plaat. Kommt zum Record Store Day Black Friday vorbei und entdeckt besondere Platten. Weitere Informationen folgen.",
+      "locationLabel": "De Plaat, Marktstraße 8, 26427 Esens",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=De%20Plaat%2C%20Marktstra%C3%9Fe%208%2C%2026427%20Esens",
+      "url": "/termine/record-store-day-black-friday-2026.html",
+      "urlLabel": "Termin ansehen",
+      "archiveUrlLabel": "Rückblick ansehen"
+    },
+    {
+      "featured": true,
       "date": "2026-08-14",
       "endDate": "2026-08-14",
       "dateLabel": "Rückblick: 14. August 2026",
